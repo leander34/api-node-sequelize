@@ -15,6 +15,7 @@ import alunoRoutes from "./routes/alunoRoutes";
 import fotoRoutes from "./routes/fotoRoutes";
 
 const whiteList = [
+  'http://34.151.232.52',
   'http://localhost:3000',
 ];
 
