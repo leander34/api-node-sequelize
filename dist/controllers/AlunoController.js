@@ -104,11 +104,13 @@ class AlunoController {
           errors: ['Aluno não encontrado'],
         });
       }
-
       await aluno.destroy();
 
-      return res.json(aluno);
+      return res.json({
+        apagado: true,
+      });
     } catch (e) {
+      console.log(e);
       return res.status(400).json({
         errors: e.errors.map((err) => err.message),
       });
