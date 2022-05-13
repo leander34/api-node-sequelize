@@ -7,7 +7,7 @@ const routes = new (0, _express.Router)();
 routes.get("/", _UserController2.default.index);
 routes.get("/:id", _UserController2.default.show);
 
-routes.post("/", _loginRequired2.default, _UserController2.default.store);
+routes.post("/", _UserController2.default.store);
 routes.put("/", _loginRequired2.default, _UserController2.default.update);
 routes.delete("/", _loginRequired2.default, _UserController2.default.delete);
 
